@@ -1,11 +1,14 @@
 ## How Amazon SageMaker Uses Containers: A Technical Deep Dive
 
-### Amazon SageMaker offers flexible container-based deployment options for both training and inference [1]. Developers can use separate Docker images for training and inference code, or combine them into a single image [2].
+![image](https://github.com/user-attachments/assets/16fcbd68-ed99-4342-a1a0-1e5d22659ec5)
+
+
+### Amazon SageMaker offers flexible container-based deployment options for both training and inference. Developers can use separate Docker images for training and inference code, or combine them into a single image.
 
 #### Container Structure and Components
 Basic Container Structure
 The standard SageMaker container structure includes
-Key Components
+#### Key Components
 #### Training Container
 Handles model training process
 Reads data from S3
