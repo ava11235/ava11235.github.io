@@ -1,4 +1,4 @@
-## How Amazon SageMaker Uses Containers: A Technical Deep Dive
+## How Amazon SageMaker Uses Containers
 
 ![image](https://github.com/user-attachments/assets/16fcbd68-ed99-4342-a1a0-1e5d22659ec5)
 
