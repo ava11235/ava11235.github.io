@@ -31,7 +31,7 @@ Inference Container
 
 Development Phase
 
-* Developers can create custom containers or use pre-built ones [4]
+* Developers can create custom containers or use pre-built ones
 * Containers must implement specific SageMaker interfaces
 * Support for both training and inference or separate containers
 
