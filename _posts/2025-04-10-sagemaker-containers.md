@@ -6,7 +6,7 @@
 Amazon SageMaker offers flexible container-based deployment options for both training and inference. Developers can use separate Docker images for training and inference code, or combine them into a single image.
 
 #### Container Structure and Components
-Basic Container Structure
+
 The standard SageMaker container structure includes:
 
 ![image](https://github.com/user-attachments/assets/ce8fae48-dbdd-4836-a17e-8386c1543b31)
