@@ -44,4 +44,6 @@ As natural language processing continues to evolve, Amazon Lex remains at the cu
 
 The best way to understand Lex's capabilities is to build a simple bot. AWS offers a free tier that allows you to process up to 10,000 text requests and 5,000 speech requests per month, making it easy to experiment without significant investment.
 
+Example Lex chatbot interface for an Airline booking chatbot
+
 ![lex](https://github.com/user-attachments/assets/74a77bbc-3252-4014-a648-e952c8c9d2b5)
