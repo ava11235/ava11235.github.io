@@ -1,6 +1,6 @@
 # Amazon Lex: Building Intelligent Conversational Interfaces for Your Applications
 
-![lex](https://github.com/user-attachments/assets/74a77bbc-3252-4014-a648-e952c8c9d2b5)
+![image-1744416822997](https://github.com/user-attachments/assets/86a2cbff-89e4-43d4-b534-0e9c3e9c58ff)
 
 In today's digital landscape, conversational AI has become a game-changer for businesses seeking to enhance customer engagement and streamline operations. Amazon Lex, the technology that powers Alexa, stands at the forefront of this revolution, offering developers a powerful platform to create sophisticated chatbots and voice interfaces.
 
@@ -43,3 +43,5 @@ As natural language processing continues to evolve, Amazon Lex remains at the cu
 ## Getting Started
 
 The best way to understand Lex's capabilities is to build a simple bot. AWS offers a free tier that allows you to process up to 10,000 text requests and 5,000 speech requests per month, making it easy to experiment without significant investment.
+
+![lex](https://github.com/user-attachments/assets/74a77bbc-3252-4014-a648-e952c8c9d2b5)
