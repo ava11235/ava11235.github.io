@@ -1,5 +1,6 @@
 # Amazon Lex: Building Intelligent Conversational Interfaces for Your Applications
 
+![lex](https://github.com/user-attachments/assets/74a77bbc-3252-4014-a648-e952c8c9d2b5)
 
 In today's digital landscape, conversational AI has become a game-changer for businesses seeking to enhance customer engagement and streamline operations. Amazon Lex, the technology that powers Alexa, stands at the forefront of this revolution, offering developers a powerful platform to create sophisticated chatbots and voice interfaces.
 
