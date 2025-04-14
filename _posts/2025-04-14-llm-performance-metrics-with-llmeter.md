@@ -60,31 +60,45 @@ LLMeter is a pure-Python library designed for LLM performance testing. Its light
 #### Configuring an LLMeter "Endpoint"
 
 `from llmeter.endpoints import BedrockConverse
+
 endpoint = BedrockConverse(model_id="...")
 `
 ####  Run "experiments" offered by LLMeter
-`# Testing how throughput varies with concurrent request cgenerate charts to visualize  the results of the load test ount:
+
+`# Testing how throughput varies with concurrent request generate charts to visualize  the results of the load test count:
+
 from llmeter.experiments import LoadTest
+
 load_test = LoadTest(
+
     endpoint=endpoint,
+    
     payload={...},
+    
     sequence_of_clients=[1, 5, 20, 50, 100, 500],
+    
     output_path="local or S3 path"
 )
+
 load_test_results = await load_test.run()
+
 load_test_results.plot_results()
 `
 #### Generate charts to visualize  the results of the load test 
 
 `import plotly.graph_objects as go
+
 from llmeter.plotting import boxplot_by_dimension
 
 result = Result.load("local or S3 path")
 
 fig = go.Figure()
+
 trace = boxplot_by_dimension(result=result, dimension="time_to_first_token")
+
 fig.add_trace(trace)
 `
+![boxplot](https://github.com/user-attachments/assets/690d8441-8aba-4b43-b59e-4a94f4fba51e)
 
 
 ### Best Practices
