@@ -86,7 +86,6 @@ trace = boxplot_by_dimension(result=result, dimension="time_to_first_token")
 fig.add_trace(trace)
 `
 
-![boxplot](https://github.com/user-attachments/assets/5353e65b-f30e-411e-889d-982b49b9adbd)
 
 ### Best Practices
 
