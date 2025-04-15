@@ -2,9 +2,8 @@
 
 
 The ability to quickly analyze data stored in CSV files is a common requirement. Here's how to create a streamlined workflow using AWS services to transform raw CSV data into queryable insights.
-   
 
-![s3-glue-athena-diagram](https://github.com/user-attachments/assets/9ac1dcb5-2474-4b26-9277-9fd2a8d3cc8a)
+![header-415](https://github.com/user-attachments/assets/0442bad1-418d-42fa-8dd5-107262193ebe)
 
 
 ## Starting Point: Our Customer Data
@@ -55,6 +54,9 @@ LIMIT 5;
 ```
 
 This query returns the first 5 rows from your customer data, allowing you to verify the schema and data quality.
+
+![s3-glue-athena-diagram](https://github.com/user-attachments/assets/9ac1dcb5-2474-4b26-9277-9fd2a8d3cc8a)
+
 
 ## Benefits of This Workflow
 
