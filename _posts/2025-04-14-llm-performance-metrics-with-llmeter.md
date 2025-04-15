@@ -65,6 +65,8 @@ endpoint = BedrockConverse(model_id="...")`
 
 ####  Run "experiments" offered by LLMeter
 
+{% highlight python %}
+
 `# Testing how throughput varies with concurrent request generate charts to visualize  the results of the load test count:
 
 from llmeter.experiments import LoadTest
@@ -83,7 +85,10 @@ load_test = LoadTest(
 load_test_results = await load_test.run()
 
 load_test_results.plot_results()
-`
+
+
+{% endhighlight %}
+
 #### Generate charts to visualize  the results of the load test 
 
 `import plotly.graph_objects as go
