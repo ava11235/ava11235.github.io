@@ -1,4 +1,4 @@
-# Simplifying Data Analytics: From CSV to Insights with AWS S3, Glue, and Athena
+# Simplifying Data Analytics: From CSV to Insights with Amazon S3, AWS Glue, and Amazon Athena
 
 
 ![s3-glue-athena](https://github.com/user-attachments/assets/efd6502d-9224-4a41-9816-c68afe65dd74)
