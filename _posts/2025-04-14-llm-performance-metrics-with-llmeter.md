@@ -61,8 +61,8 @@ LLMeter is a pure-Python library designed for LLM performance testing. Its light
 
 `from llmeter.endpoints import BedrockConverse
 
-endpoint = BedrockConverse(model_id="...")
-`
+endpoint = BedrockConverse(model_id="...")`
+
 ####  Run "experiments" offered by LLMeter
 
 `# Testing how throughput varies with concurrent request generate charts to visualize  the results of the load test count:
@@ -96,8 +96,8 @@ fig = go.Figure()
 
 trace = boxplot_by_dimension(result=result, dimension="time_to_first_token")
 
-fig.add_trace(trace)
-`
+fig.add_trace(trace)`
+
 ![boxplot](https://github.com/user-attachments/assets/690d8441-8aba-4b43-b59e-4a94f4fba51e)
 
 
