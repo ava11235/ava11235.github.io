@@ -1,8 +1,8 @@
 # Simplifying Data Analytics: From CSV to Insights with Amazon S3, AWS Glue, and Amazon Athena
 
 
-![s3-glue-athena-workflow](https://github.com/user-attachments/assets/b46e22ca-3b20-4526-a832-d5bfb02542c4)
 
+![s3-glue-athena-workflow-sm](https://github.com/user-attachments/assets/d1fb9f2a-734f-462c-bae1-2bed9de4e82d)
 
 The ability to quickly analyze data stored in CSV files is a common requirement. Here's how to create a streamlined workflow using AWS services to transform raw CSV data into queryable insights.
 
