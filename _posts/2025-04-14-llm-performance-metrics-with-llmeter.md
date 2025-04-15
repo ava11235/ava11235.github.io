@@ -59,9 +59,11 @@ LLMeter is a pure-Python library designed for LLM performance testing. Its light
 
 #### Configuring an LLMeter "Endpoint"
 
-`from llmeter.endpoints import BedrockConverse
+```` python
+from llmeter.endpoints import BedrockConverse
 
-endpoint = BedrockConverse(model_id="...")`
+endpoint = BedrockConverse(model_id="...")
+````
 
 ####  Run "experiments" offered by LLMeter
 
@@ -90,7 +92,8 @@ load_test_results.plot_results()
 
 #### Generate charts to visualize  the results of the load test 
 
-`import plotly.graph_objects as go
+```` python
+import plotly.graph_objects as go
 
 from llmeter.plotting import boxplot_by_dimension
 
@@ -100,7 +103,8 @@ fig = go.Figure()
 
 trace = boxplot_by_dimension(result=result, dimension="time_to_first_token")
 
-fig.add_trace(trace)`
+fig.add_trace(trace)
+````
 
 ![boxplot](https://github.com/user-attachments/assets/690d8441-8aba-4b43-b59e-4a94f4fba51e)
 
