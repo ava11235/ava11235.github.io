@@ -7,7 +7,8 @@ The ability to quickly analyze data stored in CSV files is a common requirement.
 
 ## Starting Point: Our Customer Data
 
-We'll work with a customer dataset containing basic information like card IDs, personal details, and location information. The CSV file contains these columns: card_id, customer_id, lastname, firstname, email, address, birthday, and country.
+We'll work with a customer dataset containing basic information like card IDs, personal details, and location information. The CSV file contains these columns: 
+`card_id, customer_id, lastname, firstname, email, address, birthday, and country`
 
 ## Step 1: Upload to Amazon S3
 
