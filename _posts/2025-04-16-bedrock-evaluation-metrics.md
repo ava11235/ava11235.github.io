@@ -1,6 +1,8 @@
 # Understanding Amazon Bedrock Metrics: A Deep Dive Into Real Performance
 
 
+![bedrock-eval](https://github.com/user-attachments/assets/fab70548-db5c-4318-a625-95a5f8fcdc81)
+
 Today, we'll analyze real metrics from Amazon Bedrock evaluations and what they mean for your AI applications.
 Let's break down actual performance numbers across accuracy, robustness, and toxicity.
 
