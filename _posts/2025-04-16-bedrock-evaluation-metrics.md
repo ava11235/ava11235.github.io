@@ -6,10 +6,48 @@
 Today, we'll analyze real metrics from Amazon Bedrock evaluations and what they mean for your AI applications.
 Let's break down actual performance numbers across accuracy, robustness, and toxicity.
 
+## Key Bedrock Evaluation Metrics:
+
+### 🎯 Accuracy
+
+Definition: Measures how correctly the model performs its intended task, varying by use case:
+- General Text: Real World Knowledge (RWK) score
+- Summarization: BERT Score
+- Q&A: F1 Score
+- Classification: Direct accuracy percentage
+
+Scale: 0.0 - 1.0 (Higher is better)
+Target: > 0.80 for production use
+
+
+### 🔄 Robustness
+
+Definition: Measures how consistently the model performs when inputs are slightly modified
+- Tests against typos, case changes, spacing variations
+- Each prompt tested with ~5 perturbations
+- Lower variation percentage indicates better stability
+
+Scale: 0% - 100% variation (Lower is better)
+Target: < 10% variation for reliable use
+
+
+### ☢️ Toxicity
+
+Definition: Measures the safety and appropriateness of model outputs
+- Uses detoxify algorithm
+- Evaluates harmful, biased, or inappropriate content
+- Critical for customer-facing applications
+
+Scale: 0.0 - 1.0 (Lower is better)
+Target: < 0.05 for safe deployment
+
+
 ### 📊 Our Sample Metrics:
 
 Accuracy: 0.391 (39.1%)
+
 Robustness: 29.8% and 7.96%
+
 Toxicity: 0.00496 (0.496%)
 
 
@@ -18,8 +56,11 @@ Toxicity: 0.00496 (0.496%)
 Performance Scale:
 
 ⭐ Excellent:    > 0.90 (90%)
+
 ✅ Good:         0.80 - 0.90 (80-90%)
+
 ⚠️ Fair:         0.70 - 0.80 (70-80%)
+
 ❌ Critical:     < 0.50 (50%) ⬅ Our score is here
 
 
@@ -39,8 +80,11 @@ and lacks confidence in basic factual responses.
 Performance Scale:
 
 ⭐ Excellent:    < 5%
+
 ✅ Good:         5% - 10% ⬅ Our 7.96% score
+
 ⚠️ Fair:         10% - 15%
+
 ❌ Concerning:   > 15% ⬅ Our 29.8% score
 
 
@@ -52,7 +96,9 @@ Original: "What's the weather like today?"
 Perturbed: "whats the wether like todey?"
 
 Response Consistency: ✅ Good
+
 Variation: Minor wording changes
+
 Impact: Minimal effect on meaning
 
 
@@ -62,6 +108,7 @@ Original: "Summarize the quarterly report."
 Perturbed: "summarise the quartely report"
 
 Response Consistency: ❌ Poor
+
 Variation: Significant content changes
 Impact: Major meaning alterations
 
@@ -92,8 +139,11 @@ Analysis: Extremely safe, neutral, and professional response
 Model Stability Matrix:
 
 Complete Profile:
+
 - Accuracy: 0.391 ❌ (Poor)
+- 
 - Robustness: 7.96% ✅ (Good) and 29.8% ❌ (Concerning)
+- 
 - Toxicity: 0.00496 ⭐ (Excellent)
 
 Overall Assessment: Mixed performance with excellent safety
@@ -101,8 +151,7 @@ Overall Assessment: Mixed performance with excellent safety
 
 ### 🎯 Real Application Examples:
 
-
-1. Customer Service Bot:
+Customer Service Bot:
 
 Current Performance:
 - Accuracy: 0.391 ❌ (Need > 0.80)
@@ -115,14 +164,18 @@ Status: Safe but not reliable
 
 Target Goals:
 🎯 Accuracy: Improve to > 0.80
+
 🎯 Robustness: All scores < 10%
+
 🎯 Toxicity: Maintain < 0.05
-📈 Weekly improvement tracking
+
 
 ### Current Status:
 
 * ❌ Accuracy needs significant improvement
+* 
 * 📊 Mixed robustness performance
+* 
 * ⭐ Excellent toxicity control
 
 Remember: While the model shows excellent safety metrics (0.00496 toxicity), the low accuracy (0.391) and mixed robustness scores
@@ -130,11 +183,14 @@ indicate a model that's safe but not yet reliable for production use.
 
 ### Improvement Roadmap:
 
-1. 🔍 Evaluate alternative models 
-2. 🔧 Prioritize accuracy improvements
-3. 📊 Address robustness variations
-4. 🛡️ Maintain excellent toxicity performance
-5. 📈 Implement comprehensive monitoring
-6. 🎯 Set clear improvement milestones
+1. 🔍 Evaluate alternative models
+   
+3. 🔧 Prioritize accuracy improvements
+   
+5. 📊 Address robustness variation
+   
+7. 🛡️ Maintain excellent toxicity performance
+   
+9. 📈 Implement comprehensive monitoring
 
 Stay tuned for more updates on Amazon Bedrock metrics and optimization strategies! 🚀
