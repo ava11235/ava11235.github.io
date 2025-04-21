@@ -54,7 +54,7 @@ FROM customer_db.customers
 LIMIT 5;
 ```
 
-This query returns the first 5 rows from your customer data (mock data), allowing you to verify the schema and data quality.
+This query returns the first 5 rows from your customer (mock) data allowing you to verify the schema and data quality.
 
 ![query-res](https://github.com/user-attachments/assets/c4345438-b543-4a1d-99e3-4044a9de777f)
 
