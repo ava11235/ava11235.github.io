@@ -208,6 +208,6 @@ The AWS ML Engineer exam specifically tests:
 
 Remember: Understanding bias isn't just about passing the exam - it's about building fair, ethical ML solutions that work for everyone! 🌟
 
-🔬 Try It Yourself! Want to get hands-on experience with this example? Check out this SageMaker Clarify notebook:
-[Bias_metrics_usage_marketing.ipynb](https://github.com/aws/amazon-sagemaker-clarify/blob/master/examples/Bias_metrics_usage_marketing.ipynb)
+🔬 Try It Yourself! Want to get hands-on experience with this example? Check out this notebook:
+[Bias_metrics_usage_marketing](https://github.com/aws/amazon-sagemaker-clarify/blob/master/examples/Bias_metrics_usage_marketing.ipynb)
 
