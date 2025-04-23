@@ -1,37 +1,39 @@
-🔍 Deep Dive: Bias Detection with Amazon SageMaker Clarify - A Practical Guide for ML Engineers
+# Bias Detection with Amazon SageMaker Clarify - A Practical Guide for ML Engineers
 
-Hey AWS ML enthusiasts! Let's explore bias detection using a real banking marketing dataset and break down what you need to know for the AWS ML Engineer certification. 📊
+Let's explore bias detection using a real banking marketing dataset and break down what you need to know for the AWS ML Engineer certification. 📊
 
-What is SageMaker Clarify? Amazon SageMaker Clarify is a powerful tool that helps:
+## What is SageMaker Clarify? 
+Amazon SageMaker Clarify is a powerful tool that helps:
 
-Detect bias in data and models
-Explain model predictions
-Promote transparency in machine learning
-Key Capabilities:
+- Detect bias in data and models
+- Explain model predictions
+- Promote transparency in machine learning
+
+### Key Capabilities:
 
 Bias Detection:
 
-Pre-training data bias analysis
-Post-training model bias evaluation
-Multiple bias metrics calculation
-Model Explainability:
+- Pre-training data bias analysis
+- Post-training model bias evaluation
+- Multiple bias metrics calculation
+- Model Explainability:
 
-Feature importance
-SHAP values
-Global and local explanations
-Integration:
+- Feature importance
+- SHAP values
+- Global and local explanations
+- Integration:
 
-Seamless integration with SageMaker
-Works with various data types
-Supports multiple model types
-When to Use Clarify:
+- Seamless integration with SageMaker
+- Works with various data types
+- Supports multiple model types
+- When to Use Clarify:
 
-Before training: Detect data bias
-After training: Evaluate model fairness
-During deployment: Monitor for bias
-For compliance: Document fairness metrics
+- Before training: Detect data bias
+- After training: Evaluate model fairness
+- During deployment: Monitor for bias
+- For compliance: Document fairness metrics
 
-🎯 Understanding the Context
+### Example usage of SageMaker Clarify for data bias detection 🎯
 We'll analyze a banking marketing campaign dataset stored in the /tmp/ directory (remember, this is temporary storage just for our analysis session!):
 
 ```python
@@ -63,6 +65,7 @@ sns.countplot(data=df, x='y')
 ![image](https://github.com/user-attachments/assets/019a97ef-b0e1-43de-b503-46589a193f6f)
 
 🔍 Detailed Bias Analysis
+
 Let's set up our bias detection:
 ```python
 # Create age buckets
@@ -75,13 +78,8 @@ report.bias_report(df, facet_column, label_column,
                   stage_type=report.StageType.PRE_TRAINING, 
                   group_variable=df['education'])
 ```
-🔍 Important Note: While we used other tools for visualization (seaborn, matplotlib):
+🔍 Notes: While we used other tools for visualization (seaborn, matplotlib), clarify is used for the report (from smclarify.bias import report)
 
-sns.pairplot() - Seaborn
-sns.countplot() - Seaborn
-plt.figure() - Matplotlib
-
-Note:Report output shortened for brevity
 ![image](https://github.com/user-attachments/assets/aacbf3e0-4cad-4784-8d3f-53ad9e12a075)
 
 🎯 Key Bias Metrics Explained:
@@ -105,6 +103,9 @@ Note:Report output shortened for brevity
 CDDL (Conditional Demographic Disparity in Labels)
 Measures bias while accounting for confounding variables (like education)
 Shows if disparities persist after controlling for other factors
+Range: -1 to +1, where 0 indicates no conditional bias
+Positive values indicate favorable bias towards the facet group
+Negative values indicate unfavorable bias against the facet group
 
 CI (Class Imbalance)
 Measures representation imbalance between groups
