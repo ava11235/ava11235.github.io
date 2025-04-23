@@ -99,6 +99,41 @@ Note:Report output shortened for brevity
    - Middle: 0.005
    - Young: 0.010
    - Old: -0.381 (much lower success rate)
+  
+   💡 Exam Tips:
+1. Know Your Metrics:
+CDDL (Conditional Demographic Disparity in Labels)
+Measures bias while accounting for confounding variables (like education)
+Shows if disparities persist after controlling for other factors
+
+CI (Class Imbalance)
+Measures representation imbalance between groups
+Range: -1 to +1 (0 = perfect balance)
+Positive values indicate overrepresentation, negative values indicate underrepresentation
+
+DPL (Difference in Positive Proportions in Labels)
+Compares the rate of positive outcomes between groups
+Shows if certain groups are more/less likely to get positive outcomes
+
+JS (Jensen-Shannon Divergence)
+Measures similarity between probability distributions
+Range: 0 to 1 (0 = identical distributions)
+
+KL (Kullback-Leibler Divergence)
+Measures how one probability distribution differs from another
+Larger values indicate greater differences
+KS (Kolmogorov-Smirnov Distance)
+
+Maximum difference between cumulative distributions
+Range: 0 to 1 (0 = no difference)
+TVD (Total Variation Distance)
+
+Measures maximum difference in probabilities between groups
+Range: 0 to 1 (0 = identical distributions)
+
+LP (L-p Norm)
+Measures the magnitude of differences between distributions
+Larger values indicate greater disparity
 
 📊 Campaign Contact Analysis
 ```python
@@ -135,40 +170,7 @@ Key findings:
    - Policy development
    - Regular reviews
 
-💡 Exam Tips:
-1. Know Your Metrics:
-CDDL (Conditional Demographic Disparity in Labels)
-Measures bias while accounting for confounding variables (like education)
-Shows if disparities persist after controlling for other factors
 
-CI (Class Imbalance)
-Measures representation imbalance between groups
-Range: -1 to +1 (0 = perfect balance)
-Positive values indicate overrepresentation, negative values indicate underrepresentation
-
-DPL (Difference in Positive Proportions in Labels)
-Compares the rate of positive outcomes between groups
-Shows if certain groups are more/less likely to get positive outcomes
-
-JS (Jensen-Shannon Divergence)
-Measures similarity between probability distributions
-Range: 0 to 1 (0 = identical distributions)
-
-KL (Kullback-Leibler Divergence)
-Measures how one probability distribution differs from another
-Larger values indicate greater differences
-KS (Kolmogorov-Smirnov Distance)
-
-Maximum difference between cumulative distributions
-Range: 0 to 1 (0 = no difference)
-TVD (Total Variation Distance)
-
-Measures maximum difference in probabilities between groups
-Range: 0 to 1 (0 = identical distributions)
-
-LP (L-p Norm)
-Measures the magnitude of differences between distributions
-Larger values indicate greater disparity
 
 2. Understanding Confounding Variables:
    - Why we used education as a group variable
