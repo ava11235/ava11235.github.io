@@ -199,7 +199,7 @@ Key findings:
    - Interpreting bias reports
    - Implementing mitigation strategies
 
-🎓 Why This Matters:
+🎓 Exam Tip:
 The AWS ML Engineer exam specifically tests:
 - Bias identification using AWS tools
 - Pre-training metric understanding
