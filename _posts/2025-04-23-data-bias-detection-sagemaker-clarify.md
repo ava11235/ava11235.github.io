@@ -2,7 +2,7 @@
 
 ![image-1745435703244](https://github.com/user-attachments/assets/6974d068-f5ae-448d-9dae-16ac863f0309)
 
-Let's explore bias detection using a real banking marketing dataset 📊
+Let's explore bias detection using a banking marketing dataset 📊
 
 ## What is SageMaker Clarify? 
 Amazon SageMaker Clarify is a powerful tool that helps:
@@ -47,6 +47,17 @@ We'll analyze a banking marketing campaign dataset stored in the /tmp/ directory
 local_data_path = '/tmp/bank-additional/bank-additional-full.csv'
 df = pd.read_csv(local_data_path)
 ```
+```python
+df.columns
+```
+![image](https://github.com/user-attachments/assets/991acb97-6646-4a11-a8db-d4febe90b634)
+
+```python
+df.head()
+```
+![image](https://github.com/user-attachments/assets/0a9dc7ab-2f6c-4991-9b32-01103d12d174)
+
+
 
 📊 Initial Data Exploration
 Let's visualize our data relationships:
