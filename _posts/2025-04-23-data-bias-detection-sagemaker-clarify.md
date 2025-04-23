@@ -19,6 +19,8 @@ Let's visualize our data relationships:
 # Create pairplot for key variables
 sns.pairplot(df[['age','campaign', 'pdays']])
 ```
+![image](https://github.com/user-attachments/assets/e6e5eb20-3e10-4da4-8268-3c8731559682)
+
 Remember: 
 - Diagonal shows distributions
 - Off-diagonal shows relationships between variables
