@@ -19,14 +19,16 @@ Bias Detection:
 - Model Explainability:
 
 - Feature importance
-- SHAP values
+- SHAP values for explainability
 - Global and local explanations
-- Integration:
+
+Integration:
 
 - Seamless integration with SageMaker
 - Works with various data types
 - Supports multiple model types
-- When to Use Clarify:
+
+When to Use Clarify:
 
 - Before training: Detect data bias
 - After training: Evaluate model fairness
