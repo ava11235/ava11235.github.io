@@ -2,6 +2,35 @@
 
 Hey AWS ML enthusiasts! Let's explore bias detection using a real banking marketing dataset and break down what you need to know for the AWS ML Engineer certification. 📊
 
+What is SageMaker Clarify? Amazon SageMaker Clarify is a powerful tool that helps:
+
+Detect bias in data and models
+Explain model predictions
+Promote transparency in machine learning
+Key Capabilities:
+
+Bias Detection:
+
+Pre-training data bias analysis
+Post-training model bias evaluation
+Multiple bias metrics calculation
+Model Explainability:
+
+Feature importance
+SHAP values
+Global and local explanations
+Integration:
+
+Seamless integration with SageMaker
+Works with various data types
+Supports multiple model types
+When to Use Clarify:
+
+Before training: Detect data bias
+After training: Evaluate model fairness
+During deployment: Monitor for bias
+For compliance: Document fairness metrics
+
 🎯 Understanding the Context
 We'll analyze a banking marketing campaign dataset stored in the /tmp/ directory (remember, this is temporary storage just for our analysis session!):
 
@@ -31,9 +60,7 @@ Remember:
 # Visualize campaign outcomes
 sns.countplot(data=df, x='y')
 ```
-Here, 'y' represents:
-- 'yes' = client subscribed to term deposit
-- 'no' = client didn't subscribe
+![image](https://github.com/user-attachments/assets/019a97ef-b0e1-43de-b503-46589a193f6f)
 
 🔍 Detailed Bias Analysis
 Let's set up our bias detection:
@@ -48,6 +75,14 @@ report.bias_report(df, facet_column, label_column,
                   stage_type=report.StageType.PRE_TRAINING, 
                   group_variable=df['education'])
 ```
+🔍 Important Note: While we used other tools for visualization (seaborn, matplotlib):
+
+sns.pairplot() - Seaborn
+sns.countplot() - Seaborn
+plt.figure() - Matplotlib
+
+Note:Report output shortened for brevity
+![image](https://github.com/user-attachments/assets/aacbf3e0-4cad-4784-8d3f-53ad9e12a075)
 
 🎯 Key Bias Metrics Explained:
 1. CDDL (Conditional Demographic Disparity in Labels)
@@ -72,6 +107,8 @@ age_group_stats = df.groupby('age_group').agg({
     'campaign': ['count', 'mean', 'sum']
 }).round(2)
 ```
+![image](https://github.com/user-attachments/assets/59c38a2c-6ef1-4162-b834-f373600a050a)
+
 Key findings:
 - Ages 50-60: highest average contacts (2.69)
 - Ages 70-80: lowest average contacts (1.94)
@@ -100,9 +137,38 @@ Key findings:
 
 💡 Exam Tips:
 1. Know Your Metrics:
-   - Understand CDDL, CI, DPL interpretations
-   - Recognize bias patterns
-   - Identify appropriate mitigation strategies
+CDDL (Conditional Demographic Disparity in Labels)
+Measures bias while accounting for confounding variables (like education)
+Shows if disparities persist after controlling for other factors
+
+CI (Class Imbalance)
+Measures representation imbalance between groups
+Range: -1 to +1 (0 = perfect balance)
+Positive values indicate overrepresentation, negative values indicate underrepresentation
+
+DPL (Difference in Positive Proportions in Labels)
+Compares the rate of positive outcomes between groups
+Shows if certain groups are more/less likely to get positive outcomes
+
+JS (Jensen-Shannon Divergence)
+Measures similarity between probability distributions
+Range: 0 to 1 (0 = identical distributions)
+
+KL (Kullback-Leibler Divergence)
+Measures how one probability distribution differs from another
+Larger values indicate greater differences
+KS (Kolmogorov-Smirnov Distance)
+
+Maximum difference between cumulative distributions
+Range: 0 to 1 (0 = no difference)
+TVD (Total Variation Distance)
+
+Measures maximum difference in probabilities between groups
+Range: 0 to 1 (0 = identical distributions)
+
+LP (L-p Norm)
+Measures the magnitude of differences between distributions
+Larger values indicate greater disparity
 
 2. Understanding Confounding Variables:
    - Why we used education as a group variable
@@ -122,3 +188,8 @@ The AWS ML Engineer exam specifically tests:
 - Real-world application
 
 Remember: Understanding bias isn't just about passing the exam - it's about building fair, ethical ML solutions that work for everyone! 🌟
+
+🔬 Try It Yourself! Want to get hands-on experience with this example? Check out this SageMaker Clarify notebook:
+
+https://github.com/aws/amazon-sagemaker-clarify/blob/master/examples/Bias_metrics_usage_marketing.ipynb
+
