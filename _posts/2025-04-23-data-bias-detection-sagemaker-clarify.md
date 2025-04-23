@@ -1,6 +1,6 @@
 # Bias Detection with Amazon SageMaker Clarify - A Practical Guide for ML Engineers
 
-Let's explore bias detection using a real banking marketing dataset and break down what you need to know for the AWS ML Engineer certification. 📊
+Let's explore bias detection using a real banking marketing dataset 📊
 
 ## What is SageMaker Clarify? 
 Amazon SageMaker Clarify is a powerful tool that helps:
