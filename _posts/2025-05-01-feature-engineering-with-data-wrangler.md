@@ -81,7 +81,7 @@ print(f"File uploaded to s3://{default_bucket}/{prefix}/ecommerce_data.csv")
 ### 2. Launch SageMaker Data Wrangler 🚀
 
 1. Open Amazon SageMaker Studio 🖥️
-2. From the Studio launcher, click on "New data flow" or navigate to File > New > Flow [[3]](https://aws.amazon.com/sagemaker/data-wrangler/)
+2. From the Studio launcher, click on "New data flow" or navigate to File > New > Flow 
 
 ![image](https://github.com/user-attachments/assets/7a1aa2d9-f251-4f1f-88a7-af1717db2796)
 
