@@ -1,7 +1,16 @@
 # 🛠️ Feature Engineering with Amazon SageMaker Data Wrangler 
 
 ## Summary
-Feature engineering is critical for machine learning success, yet it traditionally consumes 60-70% of data scientists' time. Amazon SageMaker Data Wrangler transforms this process through its visual interface, allowing you to create features without writing code. This tutorial demonstrates how Data Wrangler streamlines feature creation, from basic transformations to complex derived features that improve model performance.
+Feature engineering is the process of using domain knowledge to extract new variables (features) from raw data that make machine learning algorithms work more effectively. Amazon SageMaker Data Wrangler transforms this process through its visual interface, allowing you to create features without writing code. This tutorial demonstrates how Data Wrangler streamlines feature creation, from basic transformations to complex derived features that improve model performance.
+
+Key feature engineering techniques include:
+
+- Feature creation: Deriving new features from existing ones
+- Feature transformation: Converting features to more useful formats
+- Feature selection: Choosing the most relevant features
+- Feature encoding: Converting categorical variables to numerical format
+
+Feature engineering is critical for machine learning success, yet it traditionally consumes 60-70% of data scientists' time. 
 
 ### 1. Setup and Dataset Creation 📁
 
@@ -74,12 +83,17 @@ print(f"File uploaded to s3://{default_bucket}/{prefix}/ecommerce_data.csv")
 1. Open Amazon SageMaker Studio 🖥️
 2. From the Studio launcher, click on "New data flow" or navigate to File > New > Flow [[3]](https://aws.amazon.com/sagemaker/data-wrangler/)
 
+![image](https://github.com/user-attachments/assets/7a1aa2d9-f251-4f1f-88a7-af1717db2796)
+
 ### 3. Import the Dataset 📥
 
 1. In the Data Wrangler interface, select "Import data" 📤
 2. Choose "Amazon S3" as the data source 🪣
 3. Navigate to your bucket and select the ecommerce_data.csv file 📄
 4. Click "Import" to load the dataset into Data Wrangler ✅
+
+   ![image](https://github.com/user-attachments/assets/a3a20a53-a37d-410d-9792-c511fdfc276d)
+
 
 ### 4. Data Exploration and Analysis 🔍
 
@@ -100,6 +114,9 @@ print(f"File uploaded to s3://{default_bucket}/{prefix}/ecommerce_data.csv")
    * age: Use "Mean" imputation 📊
    * last_purchase_amount: Use "Median" imputation 💰
    * items_viewed: Use "Custom" with value 0 👁️
+
+     ![image](https://github.com/user-attachments/assets/a747179d-7305-4e9b-b988-7c32db4b4e4d)
+
 
 #### Step 2: Create Customer Segments 👥
 
@@ -125,12 +142,17 @@ print(f"File uploaded to s3://{default_bucket}/{prefix}/ecommerce_data.csv")
 3. Choose "One-hot encode" 0️⃣1️⃣
 4. Select columns: gender, location, and spending_segment 📋
 
+   ![image](https://github.com/user-attachments/assets/653340fa-ac81-4f8a-9f18-39bef071abad)
+
+
 #### Step 4: Create Interaction Features ⚡
 
 1. Add another step ➕
 2. Select "Custom formula" ✏️
 3. Create an engagement score: `(previous_purchases * 0.4) + (items_viewed * 0.3) + ((1 - cart_abandonment_rate) * 0.3)` 🧮
 4. Name the new column engagement_score 📈
+
+![image](https://github.com/user-attachments/assets/37be3e29-127b-4feb-ae34-8ec02332ba65)
 
 ### 6. Analyze Model Quality 📊
 
@@ -139,6 +161,9 @@ print(f"File uploaded to s3://{default_bucket}/{prefix}/ecommerce_data.csv")
 3. Set purchase_made as the target column 🎯
 4. Select "Classification" as the model type 🌲
 5. Review feature importance and model performance metrics [[5]](https://aws.amazon.com/blogs/machine-learning/prepare-and-visualize-time-series-datasets-in-amazon-sagemaker-data-wrangler/)
+
+   ![image](https://github.com/user-attachments/assets/812db677-bffe-41fd-9a2a-fdd6b1f3f498)
+
 
 ### 7. Export the Transformed Data 📤
 
