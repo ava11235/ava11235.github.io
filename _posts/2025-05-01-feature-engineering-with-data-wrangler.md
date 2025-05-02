@@ -161,7 +161,7 @@ print(f"File uploaded to s3://{default_bucket}/{prefix}/ecommerce_data.csv")
 3. Set purchase_made as the target column 🎯
 4. Select "Classification" as the model type 🌲
 5. Review feature importance metrics 
-This Quick Model found the items_viewed to the most important feature for predicting purchase_made. Note that this is not the final model that will be used. 
+This Quick Model found the items_viewed to the most important feature for predicting purchase_made. The score is of 0.14 for the most important feature, suggesting a model where predictive power is distributed across multiple features rather than dominated by a single one. 
    ![image](https://github.com/user-attachments/assets/812db677-bffe-41fd-9a2a-fdd6b1f3f498)
 
 
