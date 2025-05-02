@@ -160,8 +160,8 @@ print(f"File uploaded to s3://{default_bucket}/{prefix}/ecommerce_data.csv")
 2. Choose "Quick model" analysis 🏃‍♂️
 3. Set purchase_made as the target column 🎯
 4. Select "Classification" as the model type 🌲
-5. Review feature importance and model performance metrics [[5]](https://aws.amazon.com/blogs/machine-learning/prepare-and-visualize-time-series-datasets-in-amazon-sagemaker-data-wrangler/)
-
+5. Review feature importance metrics 
+This Quick Model found the items_viewed to the most important feature for predicting purchase_made. Note that this is not the final model that will be used. 
    ![image](https://github.com/user-attachments/assets/812db677-bffe-41fd-9a2a-fdd6b1f3f498)
 
 
