@@ -1,4 +1,4 @@
-# 🛠️ Feature Engineering with Amazon SageMaker Data Wrangler 🛠️
+# 🛠️ Feature Engineering with Amazon SageMaker Data Wrangler 
 
 ## Summary
 Feature engineering is critical for machine learning success, yet it traditionally consumes 60-70% of data scientists' time. Amazon SageMaker Data Wrangler transforms this process through its visual interface, allowing you to create features without writing code. This tutorial demonstrates how Data Wrangler streamlines feature creation, from basic transformations to complex derived features that improve model performance.
@@ -32,7 +32,7 @@ data = {
     'purchase_made': np.random.choice([0, 1], n_samples, p=[0.7, 0.3])
 }
 
-# Add some missing values ❓
+# Add some missing values 
 for col in ['age', 'last_purchase_amount', 'items_viewed']:
     mask = np.random.choice([True, False], n_samples, p=[0.05, 0.95])
     data[col] = np.where(mask, np.nan, data[col])
@@ -66,6 +66,8 @@ s3_client.upload_file(
 
 print(f"File uploaded to s3://{default_bucket}/{prefix}/ecommerce_data.csv")
 ```
+
+![image](https://github.com/user-attachments/assets/665d57b7-ca36-41a5-bd5e-0517438fbf22)
 
 ### 2. Launch SageMaker Data Wrangler 🚀
 
@@ -113,7 +115,8 @@ print(f"File uploaded to s3://{default_bucket}/{prefix}/ecommerce_data.csv")
    )
    ```
 
-4. Name the new column spending_segment 💸
+
+5. Name the new column spending_segment 💸
 
 #### Step 3: One-Hot Encode Categorical Variables 🔄
 
@@ -134,7 +137,7 @@ print(f"File uploaded to s3://{default_bucket}/{prefix}/ecommerce_data.csv")
 1. Select "Analysis" on your final transformation node 🔍
 2. Choose "Quick model" analysis 🏃‍♂️
 3. Set purchase_made as the target column 🎯
-4. Select "Random Forest" as the model type 🌲
+4. Select "Classification" as the model type 🌲
 5. Review feature importance and model performance metrics [[5]](https://aws.amazon.com/blogs/machine-learning/prepare-and-visualize-time-series-datasets-in-amazon-sagemaker-data-wrangler/)
 
 ### 7. Export the Transformed Data 📤
