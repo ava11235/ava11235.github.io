@@ -1,5 +1,7 @@
 # 🛠️ Feature Engineering with Amazon SageMaker Data Wrangler 
 
+![fe-img](https://github.com/user-attachments/assets/0a9711d0-25bc-4eb8-ba0b-4a3c908f9880)
+
 ## Summary
 Feature engineering is the process of using domain knowledge to extract new variables (features) from raw data that make machine learning algorithms work more effectively. Amazon SageMaker Data Wrangler transforms this process through its visual interface, allowing you to create features without writing code. This tutorial demonstrates how Data Wrangler streamlines feature creation, from basic transformations to complex derived features that improve model performance.
 
