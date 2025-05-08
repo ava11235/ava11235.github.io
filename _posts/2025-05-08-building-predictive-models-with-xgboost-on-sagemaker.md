@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Amazon SageMaker provides a comprehensive platform for building, training, and deploying machine learning models at scale [[1]](sagemaker/). In this blog post, we'll walk through a practical implementation of XGBoost, a powerful gradient boosting framework, to build a regression model using the classic Abalone dataset. 
+Amazon SageMaker provides a comprehensive platform for building, training, and deploying machine learning models at scale. In this blog post, we'll walk through a practical implementation of XGBoost, a powerful gradient boosting framework, to build a regression model using the classic Abalone dataset. 
 
 In this tutorial, we'll walk through the process of building, training, and evaluating an XGBoost regression model using Amazon SageMaker. We'll use the classic Abalone dataset to predict the age of abalone sea creatures based on physical measurements.
 
