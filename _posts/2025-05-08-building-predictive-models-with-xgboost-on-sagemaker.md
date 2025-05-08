@@ -1,5 +1,8 @@
 # Building Predictive Models with XGBoost on Amazon SageMaker: A Step-by-Step Guide
 
+
+![1746743497434_img](https://github.com/user-attachments/assets/1bf1cb1f-f76a-4d23-943e-208e806f274e)
+
 ## Introduction
 
 Amazon SageMaker provides a comprehensive platform for building, training, and deploying machine learning models at scale. In this blog post, we'll walk through a practical implementation of XGBoost, a powerful gradient boosting framework, to build a regression model using the classic Abalone dataset. 
