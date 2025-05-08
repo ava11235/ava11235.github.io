@@ -1,4 +1,4 @@
-# Building Predictive Models with XGBoost on Amazon SageMaker:A Step-by-Step Guide
+# Building Predictive Models with XGBoost on Amazon SageMaker: A Step-by-Step Guide
 
 ## Introduction
 
