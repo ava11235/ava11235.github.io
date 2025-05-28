@@ -1,5 +1,8 @@
 # 🧪 A/B Testing Machine Learning Models with Amazon SageMaker: A Practical Guide
 
+
+![1748465772876_img](https://github.com/user-attachments/assets/3b6cc37d-2fd9-4e6b-b1d2-32538e3ad8b2)
+
 In the world of machine learning deployment, making data-driven decisions about model updates is crucial. A/B testing, a tried-and-true method from web development and marketing, proves equally valuable when evaluating machine learning models in production. This post explores how to implement A/B testing with Amazon SageMaker to make informed decisions about model deployment. 🚀
 
 ## 🤔 What is A/B Testing in Machine Learning?
