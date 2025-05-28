@@ -55,7 +55,7 @@ The notebook covers:
   ![image](https://github.com/user-attachments/assets/8d96bfc4-6f5f-48eb-a899-9bc9edab4226)
 
 
-[https://github.com/ava11235/ml/blob/main/ab-testing-for-ml.ipynb] 📓
+https://github.com/ava11235/ml/blob/main/ab-testing-for-ml.ipynb 📓
 
 ## 🎯 Conclusion
 
