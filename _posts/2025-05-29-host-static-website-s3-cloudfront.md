@@ -11,14 +11,13 @@ A static website consists of fixed content that displays the same information fo
 
 Static websites are perfect for portfolios, landing pages, documentation sites, and blogs because they are:
 - Lightning-fast (no processing time)
-- Highly secure, since you don't need to make your S3 bucket public
 - Easy to deploy and maintain
 - Highly reliable
 
 📋 Why I Chose This Setup:
 - Reliable hosting with 99.99% uptime
 - Global content delivery through CloudFront's edge locations
-- Built-in HTTPS security
+- Highly secure, since you don't need to make your S3 bucket public
 
 🔍 Here's How I Set Everything Up:
 
