@@ -24,6 +24,7 @@ Static websites are perfect for portfolios, landing pages, documentation sites, 
 ## 🚀 Implementation Guide: S3 + CloudFront with Origin Access Control
 
 ### Step 1: Create Your S3 Bucket and Upload Website Files 📂
+```
 
 1. Sign in to the AWS Management Console and open the Amazon S3 console.
 2. Choose **Create bucket** ➕.
@@ -31,11 +32,13 @@ Static websites are perfect for portfolios, landing pages, documentation sites, 
 4. Select your preferred AWS Region 🗺️.
 5. Keep all default settings and choose **Create bucket**.
 6. Select your new bucket and upload your website files (HTML, CSS, JavaScript, images, etc.) 📄.
+```
 
 > 💡 **Note**: Unlike traditional S3 website hosting, you don't need to enable static website hosting on the bucket. We'll be using the REST API endpoint instead of the website endpoint.
 
 ### Step 2: Create a CloudFront Web Distribution with Origin Access Control ☁️
 
+```
 1. Open the CloudFront console.
 2. Choose **Create Distribution** ➕.
 3. Under **Origin Domain**, enter or select your S3 bucket 🪣.
@@ -49,17 +52,19 @@ Static websites are perfect for portfolios, landing pages, documentation sites, 
    - If using a custom domain, enter it under **Alternate domain names (CNAMEs)** 🏷️.
    - For **SSL certificate**, select **Custom SSL Certificate** and request or choose your certificate if using a custom domain 📜.
 9. Complete the remaining settings as needed for your specific use case and choose **Create distribution** 🚀.
+```
 
 ### Step 3: Update Your S3 Bucket Policy 📝
 
 After creating your distribution, CloudFront provides the policy statement needed to give OAC permission to access your S3 bucket:
 
+```
 1. Copy the policy provided by CloudFront 📋.
 2. Go to your S3 bucket in the AWS console.
 3. Go to the **Permissions** tab 🔑.
 4. Under **Bucket policy**, choose **Edit** and paste the policy.
 5. Choose **Save changes** 💾.
-
+```
 The policy will look similar to this:
 
 ```json
@@ -86,9 +91,10 @@ The policy will look similar to this:
 
 ### Step 4: Update DNS Records for Your Custom Domain (If Applicable) 🔄
 
+```
 1. In your DNS provider's console, create a CNAME record pointing your domain to your CloudFront distribution URL (e.g., `d1234abcd.cloudfront.net`) 🌐.
 2. Wait for DNS changes to propagate (can take up to 48 hours, but often much less) ⏳.
-
+```
 
 ## 🔄 How I Maintain My Portfolio Site:
 
