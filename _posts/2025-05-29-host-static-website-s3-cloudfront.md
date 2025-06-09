@@ -101,7 +101,11 @@ The policy will look similar to this:
 1. 📝 Updating Content:
 ```
 - When I make changes, I upload new files to S3
-- For immediate updates, I create a CloudFront invalidation
+- For immediate updates, I create a CloudFront invalidation. Why? CloudFront caches content at edge locations to improve performance, but this means updated files might not be immediately visible to users until the cache expires naturally. Invalidation forces an immediate update. It's not strictly necessary if you can wait for natural cache expiration, but it's useful when you need immediate content updates to be visible to all users.
+```
+```
+aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
+```
 - Usually just targeting the specific files I changed
 ```
 
@@ -121,7 +125,6 @@ The policy will look similar to this:
 This is how I'm currently hosting my portfolio site using S3 and CloudFront with the default distribution URL. It's been a great solution - my site loads quickly, is always available, and costs very little to maintain.
 
 ✅ What I've Learned:
-- This approa
 
 I hope this guide helps you set up your own portfolio website the same way. Feel free to reach out if you have any questions about how I did this!
 
