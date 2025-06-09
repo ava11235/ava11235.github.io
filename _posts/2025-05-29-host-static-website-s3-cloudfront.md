@@ -99,21 +99,21 @@ The policy will look similar to this:
 ## 🔄 How I Maintain My Portfolio Site:
 
 1. 📝 Updating Content:
-```
+
 - When I make changes, I upload new files to S3
 - For immediate updates, I create a CloudFront invalidation. Why? CloudFront caches content at edge locations to improve performance, but this means updated files might not be immediately visible to users until the cache expires naturally. Invalidation forces an immediate update. It's not strictly necessary if you can wait for natural cache expiration, but it's useful when you need immediate content updates to be visible to all users.
-```
+
 ```
 aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --paths "/*"
 ```
 - Usually just targeting the specific files I changed
-```
+
 
 2. 📊 Monitoring:
-```
+
 - I occasionally check CloudFront metrics in CloudWatch
 - This helps me see visitor patterns and ensure everything's running smoothly
-```
+
 
 💰 Important: Before we dive into the implementation, you should be aware that AWS is a pay-as-you-go service with costs that vary based on usage.
 
