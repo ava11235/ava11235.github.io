@@ -132,8 +132,8 @@ Bias : Systematic errors in machine learning models that can lead to unfair or d
 
 Bilingual Evaluation Understudy (BLEU) : Metric for evaluating the quality of machine-translated text.
 
- ### C
-
+### C
+ 
 Chain-of-Thought : Prompt engineering technique that encourages models to show their reasoning process.
 
 Chunking : Process of breaking down large text into smaller, manageable pieces for processing.
@@ -184,7 +184,7 @@ Generative AI : Type of artificial intelligence that can create new content, inc
 
 Guardrails for Amazon Bedrock : AWS feature that implements safeguards for responsible AI applications.
 
- ### H
+### H
 
 Hallucinations : When AI models generate false or nonsensical information presented as fact.
 
@@ -200,7 +200,7 @@ Inferencing : Process of using trained machine learning models to make predictio
 
 Instruction Tuning : Fine-tuning technique that trains models to follow specific instructions.
 
- ### J
+### J
 
 Jailbreaking : Technique used to bypass AI model safety restrictions and guardrails.
 
@@ -224,7 +224,7 @@ Natural Language Processing (NLP) : AI field focused on enabling machines to und
 
 Neural Networks : Computing systems inspired by biological neural networks used in machine learning.
 
- ### O
+### O
 
 Overfitting : When a model learns training data too specifically and fails to generalize to new data.
 
@@ -280,7 +280,7 @@ Transfer Learning : Machine learning technique that applies knowledge from one t
 
 Transformer-based LLMs : Language models built using the transformer architecture.
 
- ### U
+### U
 
 Underfitting : When a model is too simple to capture underlying patterns in data.
 
@@ -290,7 +290,7 @@ Unsupervised Learning : Machine learning approach that finds patterns in data wi
 
 Vectors : Mathematical representations of data points in multi-dimensional space.
 
- ### Z
+### Z
 
 Zero-shot Learning : Machine learning approach that makes predictions without specific training examples.
 
