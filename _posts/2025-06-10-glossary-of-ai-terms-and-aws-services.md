@@ -1,4 +1,4 @@
-## Glossary of AI, ML terms and AWS services referenced in the AWS Certified AI Practitioner (AIF-C01) Exam Guide
+## 📚  Glossary of AI, ML terms and AWS services referenced in the AWS Certified AI Practitioner (AIF-C01) Exam Guide
 
 ![1749573199705_img](https://github.com/user-attachments/assets/541cf81b-5414-45af-b35c-ae1ee011f663)
 
