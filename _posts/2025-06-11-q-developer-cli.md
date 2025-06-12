@@ -83,8 +83,10 @@ Amazon Q isn't just for chatting! Here are some other helpful commands:
 
   ![image](https://github.com/user-attachments/assets/366882ae-594f-4a7f-afd3-7c46a5f19e09)
 
+## 🧐 Fuzzy search
 
-Amazon Q Developer CLI has added a powerful fuzzy search capability for slash commands that you can access with Ctrl + S. This intuitive feature allows you to quickly find and execute commands without needing to remember their exact syntax. When you press Ctrl + S during a Q chat session, a search interface appears where you can type partial command names and see matching slash commands instantly. For example, typing "con" might show both "/context" and "/connect" commands. This fuzzy matching makes the CLI significantly more accessible, especially for new users who are still learning the available commands or experienced developers who use certain specialized commands infrequently. The search results show not only the command names but also brief descriptions of what each command does, helping you select exactly the functionality you need without interrupting your workflow to check documentation.
+Amazon Q Developer CLI has added a fuzzy search capability for slash commands that you can access with Ctrl + S. This intuitive feature allows you to quickly find and execute commands without needing to remember their exact syntax. When you press Ctrl + S during a Q chat session, a search interface appears where you can type partial command names and see matching slash commands instantly.
+
 
 
 ## 🎉 Conclusion
