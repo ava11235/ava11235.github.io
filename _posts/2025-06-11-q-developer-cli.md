@@ -23,8 +23,8 @@ I'll demonstrate how to install on Ubuntu (which I'm running inside WSL in VS Co
 
 When using the Amazon Q Developer CLI, you need to authenticate to Q Developer with your Builder ID. After launching, follow the authentication prompts with either Builder ID or IAM Identity Center.
 
-If planning to interact with AWS services, as I will in this demo, you need to configure your AWS credentials by running the  ` aws configure `command.
- You can use me for many tasks that don't require AWS credentials, including writing code like Python scripts.
+If planning to interact with AWS services, as I will in this demo, you need to configure your AWS credentials by running the  ``` aws configure ```command.
+ You can use Q Developer CLI for many tasks that don't require AWS credentials, including writing code like Python scripts.
 
 
 ### Ubuntu Installation Steps: 📦
