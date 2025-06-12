@@ -91,6 +91,6 @@ Amazon Q Developer CLI has added a fuzzy search capability for slash commands th
 
 ## 🎉 Conclusion
 
-Amazon Q Developer brings AI assistance directly to your terminal. While I've shown the Ubuntu installation (perfect for WSL users!), remember to check the official documentation for other platforms. Give it a try - your command line will never feel the same again!
+Amazon Q Developer brings AI assistance directly to your terminal. While I've shown the Ubuntu installation, remember to check the official documentation for other platforms installation commands. Give it a try - your command line will never feel the same again!
 
 Happy coding! 💻✨
