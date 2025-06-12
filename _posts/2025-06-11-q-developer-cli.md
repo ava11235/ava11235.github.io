@@ -19,7 +19,7 @@ The CLI tool works across multiple platforms and shell environments, making it a
 
 ## 💻 Installing Amazon Q Developer 🐧
 
-I'll demonstrate how to install on Ubuntu (which I'm running inside WSL in VS Code), but you can find installation instructions for macOS, Linux AppImage, and other environments in the official AWS documentation: https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line-installing.html
+I'll demonstrate how to install on Ubuntu (which I'm running inside WSL in VS Code), but you can find installation instructions for macOS, Linux AppImage, and other environments in the [official AWS documentation](https://docs.aws.amazon.com/amazonq/latest/qdeveloper-ug/command-line-installing.html)
 
 When using the Amazon Q Developer CLI, you need to authenticate to Q Developer with your Builder ID. After launching, follow the authentication prompts with either Builder ID or IAM Identity Center.
 
