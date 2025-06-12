@@ -59,7 +59,8 @@ This opens an AI chat session right in your terminal! With properly configured A
 These commands will help you quickly check your AWS resources without having to navigate through the AWS console or use multiple AWS CLI commands.
 
 
-![image](https://github.com/user-attachments/assets/03be06a7-5dde-4266-9fb2-d1ef64684a69)
+![image](https://github.com/user-attachments/assets/18d244ee-7a41-4afd-ab25-4adc9267cb44)
+
 
 To exit the chat, type `/quit`. 
 
