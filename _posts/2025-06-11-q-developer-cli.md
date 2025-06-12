@@ -63,7 +63,7 @@ These commands will help you quickly check your AWS resources without having to 
 
 To exit the chat, type `/quit`. 
 
-If you want to see all available options and subcommands for Amazon Q CLI, you can run /help for more 
+If you want to see all available options and subcommands for Amazon Q CLI, you can run ```/help ``` for more 
 information.
 
 ![image](https://github.com/user-attachments/assets/b3173b85-703d-4290-83aa-8843180b1ebe)
