@@ -1,5 +1,7 @@
 # 🚀 Getting Started with Strands SDK: Building Your First AI Agent
 
+![1750102136740_img](https://github.com/user-attachments/assets/d4b4372b-c41c-4ac1-9f76-673f62066859)
+
 As AI development becomes more accessible, frameworks like Strands SDK are making it easier than ever to build capable AI agents. In this post, we'll explore how to create an agent that accesses AWS documentation and generates architecture diagrams using Amazon Q Developer CLI to assist us. ✨
 
 
