@@ -54,7 +54,7 @@ pip install strands-agents uv sarif-om
 Let's create an agent that can access AWS documentation and create architecture diagrams. In VS Code, we can use Amazon Q Developer CLI to help us:
 
 ```bash
-q-developer "Help me write a Strands agent that uses MCP to access AWS documentation and create architecture diagrams"
+"Help me write a Strands agent that uses MCP to access AWS documentation and create architecture diagrams"
 ```
 
 After getting guidance from Amazon Q Developer CLI, create a file named aws_docs_diagram_agent.py with the following code:
@@ -157,23 +157,23 @@ The real power comes from combining multiple MCP servers to create agents with d
 Amazon Q Developer CLI can help at various stages:
 
 
-* 🔍 Find examples: q-developer "Show me examples of using MCP clients in Strands"
-* 🐛 Debug issues: q-developer "Explain error in MCPClient initialization"
-* 💡 Optimize code: q-developer "How can I make my Strands agent more efficient?"
-* 📚 AWS documentation: q-developer "How do I set up CloudFront with S3?"
+* 🔍 Find examples:  "Show me examples of using MCP clients in Strands"
+* 🐛 Debug issues: "Explain error in MCPClient initialization"
+* 💡 Optimize code:  "How can I make my Strands agent more efficient?"
+* 📚 AWS documentation: "How do I set up CloudFront with S3?"
 
 ## 🔄 Customizing Your Agent
 
 Need to adjust your agent? Ask Amazon Q Developer CLI:
 
 ```bash
-q-developer "Show me how to add another MCP server to my Strands agent"
+ "Show me how to add another MCP server to my Strands agent"
 ```
 
 Or to get help with MCP context managers:
 
 ```bash
-q-developer "Explain best practices for working with multiple MCP clients in Strands"
+"Explain best practices for working with multiple MCP clients in Strands"
 ```
 
 
