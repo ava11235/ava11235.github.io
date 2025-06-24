@@ -71,10 +71,10 @@ Domain name (optional)
 
 - Keep "Grant CloudFront access to origin" enabled (default)
 
+  ![image](https://github.com/user-attachments/assets/6581dc60-032e-49b6-80d1-84828389bc95)
+
+
 ### Step 4: Review & Create
-
-![image](https://github.com/user-attachments/assets/97a1092b-75b3-4d65-96d8-ac3890ea10c0)
-
 
  Review settings
 - Review the Origin and Behaviors settings and customize if needed (not required)
