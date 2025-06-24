@@ -1,3 +1,5 @@
+UPDATED: As of June 2025 Amazon CloudFront just got a major upgrade with a simplified onboarding experience that lets developers secure and accelerate their web applications in seconds! I have updated my tutorial accordingly.
+
 # 🚀 How I'm Hosting My Portfolio Website on AWS S3 with CloudFront
 
 🌟 I'm currently hosting my [portfolio website](https://d2b2q92b8w3i9s.cloudfront.net/portfolio.html) using Amazon S3 and CloudFront. I wanted a reliable, fast, and cost-effective solution, and this setup has been perfect. In this guide, I'll walk you through exactly how I did it, using the default CloudFront distribution URL.
@@ -21,80 +23,85 @@ Static websites are perfect for portfolios, landing pages, documentation sites, 
 
 🔍 Here's How I Set Everything Up:
 
-## 🚀 Implementation Guide: S3 + CloudFront with Origin Access Control
+## 🚀 UPDATED Implementation Guide: S3 + CloudFront with Origin Access Control
 
-### Step 1: Create Your S3 Bucket and Upload Website Files 📂
-```
 
-1. Sign in to the AWS Management Console and open the Amazon S3 console.
-2. Choose **Create bucket** ➕.
-3. Enter a unique bucket name (e.g., `my-static-website-bucket`).
-4. Select your preferred AWS Region 🗺️.
-5. Keep all default settings and choose **Create bucket**.
-6. Select your new bucket and upload your website files (HTML, CSS, JavaScript, images, etc.) 📄.
-```
+### 📋 Prerequisites:
 
-> 💡 **Note**: Unlike traditional S3 website hosting, you don't need to enable static website hosting on the bucket. We'll be using the REST API endpoint instead of the website endpoint.
+AWS account
+Website files ready to deploy
+Domain name (optional)
 
-### Step 2: Create a CloudFront Web Distribution with Origin Access Control ☁️
+### 🔧 Step 1: Create S3 Bucket
 
-```
-1. Open the CloudFront console.
-2. Choose **Create Distribution** ➕.
-3. Under **Origin Domain**, enter or select your S3 bucket 🪣.
-4. Under **Origin access**, select **Origin access control settings (recommended)** ✅.
-5. In the dropdown list, choose **Create control setting** ⚙️.
-6. Name your control setting (e.g., `s3-website-oac`) and leave the default **Sign requests (recommended)** setting enabled.
-7. Choose **Create** 🆕.
-8. Configure additional distribution settings:
-   - **Viewer protocol policy**: Choose **Redirect HTTP to HTTPS** for better security 🔒.
-   - **Default root object**: Enter your main page (typically `index.html`).
-   - If using a custom domain, enter it under **Alternate domain names (CNAMEs)** 🏷️.
-   - For **SSL certificate**, select **Custom SSL Certificate** and request or choose your certificate if using a custom domain 📜.
-9. Complete the remaining settings as needed for your specific use case and choose **Create distribution** 🚀.
-```
+- Open AWS Console and navigate to S3
 
-### Step 3: Update Your S3 Bucket Policy 📝
+- Click "Create bucket"
 
-After creating your distribution, CloudFront provides the policy statement needed to give OAC permission to access your S3 bucket:
+- Choose a unique bucket name
 
-```
-1. Copy the policy provided by CloudFront 📋.
-2. Go to your S3 bucket in the AWS console.
-3. Go to the **Permissions** tab 🔑.
-4. Under **Bucket policy**, choose **Edit** and paste the policy.
-5. Choose **Save changes** 💾.
-```
-The policy will look similar to this:
+- Accept default settings
 
-```json
-{
-    "Version": "2012-10-17",
-    "Statement": [
-        {
-            "Sid": "AllowCloudFrontServicePrincipal",
-            "Effect": "Allow",
-            "Principal": {
-                "Service": "cloudfront.amazonaws.com"
-            },
-            "Action": "s3:GetObject",
-            "Resource": "arn:aws:s3:::my-static-website-bucket/*",
-            "Condition": {
-                "StringEquals": {
-                    "AWS:SourceArn": "arn:aws:cloudfront::123456789012:distribution/EDFDVBD6EXAMPLE"
-                }
-            }
-        }
-    ]
-}
-```
+- Create bucket
 
-### Step 4: Update DNS Records for Your Custom Domain (If Applicable) 🔄
+![image](https://github.com/user-attachments/assets/3a5f5059-5b67-4632-a9f7-1b6ffde85f18)
 
-```
-1. In your DNS provider's console, create a CNAME record pointing your domain to your CloudFront distribution URL (e.g., `d1234abcd.cloudfront.net`) 🌐.
-2. Wait for DNS changes to propagate (can take up to 48 hours, but often much less) ⏳.
-```
+
+### 📦 Step 2: Upload Content
+
+- Upload your website files to S3
+- Ensure index.html is in root
+
+![image](https://github.com/user-attachments/assets/e675ba2b-a19c-4259-8f36-e66fea7a54b7)
+
+
+### ☁️ Step 3: Configure CloudFront
+
+- Navigate to CloudFront console
+
+- Click "Create Distribution"
+
+- Select "Single website or app"
+
+- Enter your domain name (optional)
+
+- Choose "Amazon S3" as origin
+
+- Select your bucket
+
+- Keep "Grant CloudFront access to origin" enabled (default)
+
+### Step 4: Review & Create
+
+![image](https://github.com/user-attachments/assets/97a1092b-75b3-4d65-96d8-ac3890ea10c0)
+
+
+ Review settings
+- Review the Origin and Behaviors settings and customize if needed (not required)
+
+- Create distribution
+
+- Wait for deployment (several minutes usually)
+
+Use CloudFront URL to access your site
+
+- From the General Tab, copy the distribution domain name
+
+- Append /index.html to it. 
+
+- You should be able to access your website!
+
+
+![image](https://github.com/user-attachments/assets/e6f1ebfc-4dc3-469c-b50b-f07fe22e04af)
+
+
+💡 Pro Tip: The new simplified process automatically:
+
+• Configures bucket permissions (my favorite part of the update!)
+• Sets up origin access control 
+
+• Handles security settings
+
 
 ## 🔄 How I Maintain My Portfolio Site:
 
@@ -109,9 +116,13 @@ aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --path
 - Usually just targeting the specific files I changed
 
 
-2. 📊 Monitoring:
+2. 📊 Metrics
+ 
+I use the View Metrics in CloudFront
 
-- I occasionally check CloudFront metrics in CloudWatch
+![image](https://github.com/user-attachments/assets/51193b1a-9cb5-48e9-b987-979b4591b275)
+
+
 - This helps me see visitor patterns and ensure everything's running smoothly
 
 
@@ -122,7 +133,7 @@ aws cloudfront create-invalidation --distribution-id YOUR_DISTRIBUTION_ID --path
 - The global distribution means my site loads quickly for everyone
 - It's easy to update and maintain
 - The default CloudFront URL works great until I decide to add a custom domain
-This is how I'm currently hosting my portfolio site using S3 and CloudFront with the default distribution URL. It's been a great solution - my site loads quickly, is always available, and costs very little to maintain.
+This is how I'm currently hosting my portfolio site using S3 and CloudFront with the default distribution URL. It's been a great solution - my site loads quickly, is always available, and costs very little to maintain.  Next, I plan to add a custom domain. I will blog about it!
 
 ✅ What I've Learned:
 
