@@ -126,7 +126,42 @@ I use the View Metrics in CloudFront
 - This helps me see visitor patterns and ensure everything's running smoothly
 
 
-💰 Important: Before we dive into the implementation, you should be aware that AWS is a pay-as-you-go service with costs that vary based on usage.
+## 💰 Cost Considerations
+Important: Before you dive into the implementation, you should be aware that AWS is a pay-as-you-go service with costs that vary based on usage.
+
+The cost for hosting your static website using S3 and CloudFront typically ranges from $1-5/month for small to moderate sites, but will vary based on your traffic volume, storage needs, and global user distribution. You can also take advantage of the AWS's free tier limits.
+
+📊 Main Cost Components:
+
+- S3 Storage
+
+- Storage used
+
+- Data transfer
+
+- Requests
+
+- CloudFront
+
+- Data transfer out
+
+- Number of requests
+
+- Edge locations used
+
+### 💡 Cost-Saving Tips:
+
+- Enable CloudFront caching
+
+- Optimize assets 
+
+- Monitor usage 
+
+- Set up billing alerts
+
+ - Set up AWS Cost Explorer to track actual usage and costs
+  
+- Try the [AWS pricing calculator tool](https://calculator.aws/#/)
 
 ## 🎯 Conclusion:
 - This approach is perfect for static websites like portfolios
