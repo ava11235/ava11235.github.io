@@ -29,9 +29,6 @@ When you first open KIRO, you'll go through a quick setup:
 * Select your preferred theme
 * Set up shell integration for command execution
 
-<img  alt="image" src="https://github.com/user-attachments/assets/c84f35f8-d966-4033-9f99-1d54a55d6e2f" />
-
-
 
 ### Opening Your Project
 
@@ -45,7 +42,12 @@ kiro .
 ```
 Option 2: From KIRO interface
 
-Open KIRO and select your project or work with Kiro to create a new project from a spec``
+Open KIRO and select your project or work with Kiro to create a new project from a spec
+
+<img width="1214" height="913" alt="image" src="https://github.com/user-attachments/assets/e67f695d-0096-4590-b25a-79e6bc97ef4c" />
+
+
+
 
 ### Watch my video [First Look at Kiro Agentic IDE](https://youtu.be/ai65z0DMMow?si=XU5Pw9KHepZq1x_J)
 <img  alt="image" src="https://github.com/user-attachments/assets/c7e76a55-d038-4cd9-aebf-630b977a8747" />
