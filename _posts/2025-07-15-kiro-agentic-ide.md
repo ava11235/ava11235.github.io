@@ -1,6 +1,6 @@
 # 👻 Meet KIRO: Your AI-Powered Development Companion 🚀
 
-<img width="851" height="504" alt="image" src="https://github.com/user-attachments/assets/a483eb37-9225-4d1d-930b-3fc9c24f7490" />
+<img width="858" height="470" alt="image" src="https://github.com/user-attachments/assets/90d3ae98-3592-4466-9366-2c71ec5d26e9" />
 
 
 
@@ -16,7 +16,8 @@ Getting up and running with KIRO is straightforward:
 2. Run the installer for your OS (Windows, macOS, or Linux)
 3. Launch KIRO and start coding!
 
-<img width="1172" height="597" alt="image" src="https://github.com/user-attachments/assets/d5459ccd-a7ae-45a3-b914-e60a3c78e3b8" />
+<img width="1172" height="597" alt="image" src="https://github.com/user-attachments/assets/edbfb153-84ed-4452-ab49-78825e7c174b" />
+
 
 
 ### First Run Setup
@@ -28,7 +29,8 @@ When you first open KIRO, you'll go through a quick setup:
 * Select your preferred theme
 * Set up shell integration for command execution
 
-  <img width="1956" height="1111" alt="image" src="https://github.com/user-attachments/assets/be3d34ed-ccd4-40f6-a518-552f9ba1ccd9" />
+<img width="1894" height="1100" alt="image" src="https://github.com/user-attachments/assets/c84f35f8-d966-4033-9f99-1d54a55d6e2f" />
+
 
 
 ### Opening Your Project
@@ -45,8 +47,8 @@ Option 2: From KIRO interface
 
 Open KIRO and select your project or work with Kiro to create a new project from a spec``
 
-### Watch my video: How I used KIRO to create my passion project AI chatbot
-[First Look at Kiro Agentic IDE](https://youtu.be/ai65z0DMMow?si=XU5Pw9KHepZq1x_J)
+### Watch my video [First Look at Kiro Agentic IDE](https://youtu.be/ai65z0DMMow?si=XU5Pw9KHepZq1x_J)
+<img width="1120" height="631" alt="image" src="https://github.com/user-attachments/assets/c7e76a55-d038-4cd9-aebf-630b977a8747" />
 
 ### Core Features 💫
 
