@@ -174,7 +174,7 @@ Key career paths include:
 
 ## The Path Forward 🛤️
 
-The convergence of AI and cloud computing is not just a trend—it's the new reality of technology careers. Organizations are increasingly looking for professionals who can bridge the gap between traditional cloud infrastructure and AI-powered solutions. The AWS Cloud Adoption Framework for Artificial Intelligence, Machine Learning, and Generative AI provides a comprehensive mental model for organizations striving to generate business value from AI.
+The convergence of AI and cloud computing is not just a trend—it's the new reality of technology careers. Organizations are increasingly looking for professionals who can bridge the gap between traditional cloud infrastructure and AI-powered solutions. 
 
 As we move forward, the most successful cloud professionals will be those who:
 * Embrace AI as an integral part of their skill set
