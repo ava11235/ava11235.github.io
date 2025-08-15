@@ -154,4 +154,4 @@ Quick Checklist Before Logging Off
 Remember: "If you're not using it, turn it off!"
 
 ### 🔥 Coming Soon: Step-by-Step Project Tutorials!
-Excited about these projects? I'll be releasing detailed, hands-on tutorials showing you exactly how to build them! Follow me to get notified when they drop. First up: Building an AI-powered Chatbot with AWS Amplify!
+Excited about these projects? I'll be releasing detailed, hands-on tutorials showing you exactly how to build them! Follow me to get notified when they drop. 
