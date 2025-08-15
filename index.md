@@ -1,4 +1,4 @@
-Hi, I'm Cloud Coach Ava. Welcome to my blog, Head in the Clouds.
+Hi, I'm Ava. I'm a senior technical trainer. Welcome to my blog, Head in the Clouds.
 
 I blog about technology, especially about AWS Cloud, AI and ML. 
 
