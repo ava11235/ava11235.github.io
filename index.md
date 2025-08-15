@@ -1,4 +1,4 @@
-Hi, I'm Ava. I'm a senior technical trainer and cloud coach who teaches AWS and AI technical skills in a fun and practical way. Welcome to my blog, Head in the Clouds.
+Hi, I'm Ava. I'm an 8XAWS and Python certified senior technical trainer and cloud coach who teaches AWS and AI technical skills in a fun and practical way. Welcome to my blog, Head in the Clouds.
 
 I blog about technology, especially about AWS Cloud, AI and ML. 
 
