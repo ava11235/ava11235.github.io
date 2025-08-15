@@ -1,4 +1,8 @@
 # 10 Projects to Supercharge Your AWS Cloud Portfolio 🚀
+
+
+![1755282611836_img](https://github.com/user-attachments/assets/53efe5d5-6f19-4b24-a67a-db2de52379ad)
+
 *Read Time: 10 minutes*
 
 ## Why You Need a Project Portfolio 🎯
