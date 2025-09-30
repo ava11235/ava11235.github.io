@@ -1,13 +1,14 @@
 # Beyond Large Language Models: Why AI Agents Are the Future of Intelligent Applications
 
+
 <img width="1227" height="329" alt="image" src="https://github.com/user-attachments/assets/c36a9cdf-fe68-4ff2-912b-dace49ad7ba6" />
 
 
 
 
-*A hands-on exploration of the difference between generative AI and AI agents through a real-world weather chatbot built on AWS*
+*Ane xploration of the difference between generative AI and AI agents through a real-world weather chatbot built on AWS*
 
-*See a demo of the chatbot here*:
+[See a Demo of the Weather AI Chatbot](https://youtu.be/1SSygQFZsQA)
 
 ---
 
@@ -174,7 +175,7 @@ Modern AI applications are moving toward:
 
 ## Building Your Own Hybrid AI System
 
-*This entire weather chatbot system was built using vibe coding and Kiro, an AI-powered development environment that accelerated the coding, deployment, and architecture design process significantly.*
+*This entire weather chatbot system was built using vibe coding and [Kiro](https://kiro.dev/blog/introducing-kiro/), an AI-powered development environment that accelerated the coding, deployment, and architecture design process significantly.*
 
 <img width="854" height="473" alt="image" src="https://github.com/user-attachments/assets/806f3142-58f7-4e9d-8120-b837790339f0" />
 
