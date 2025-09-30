@@ -6,7 +6,7 @@
 
 
 
-*Ane xploration of the difference between generative AI and AI agents through a real-world weather chatbot built on AWS*
+*An exploration of the difference between generative AI and AI agents through a real-world weather chatbot built on AWS*
 
 [See a Demo of the Weather AI Chatbot](https://youtu.be/1SSygQFZsQA)
 
