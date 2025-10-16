@@ -3,9 +3,9 @@
 ![1760638591774_img](https://github.com/user-attachments/assets/90c33551-6226-47e9-b772-bbb3ea8f916e)
 
 
-
 Whether you're new to generative AI or looking to level up your prompt engineering skills, understanding how to effectively communicate with large language models (LLMs) can dramatically improve your results. Amazon Bedrock Playground offers a powerful sandbox for experimenting with different prompting techniques across multiple AI models. In this comprehensive guide, we'll explore proven prompting strategies, model-specific approaches, and best practices for both text and image generation.
 
+The video version of this blog can be found [here](https://youtu.be/sBKGq_69uBY)
 # Important Note: Non-Deterministic Responses
 
 **⚠️ Why This Guide Doesn't Include Example Outputs**
