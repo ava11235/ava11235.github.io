@@ -1,6 +1,7 @@
 # A Comprehensive Guide to Prompt Engineering: Text and Image Generation Techniques
 
-![1760635287360_img](https://github.com/user-attachments/assets/b2e5bd22-1f34-452c-940e-08c1da39f5e8)
+![1760638591774_img](https://github.com/user-attachments/assets/90c33551-6226-47e9-b772-bbb3ea8f916e)
+
 
 
 Whether you're new to generative AI or looking to level up your prompt engineering skills, understanding how to effectively communicate with large language models (LLMs) can dramatically improve your results. Amazon Bedrock Playground offers a powerful sandbox for experimenting with different prompting techniques across multiple AI models. In this comprehensive guide, we'll explore proven prompting strategies, model-specific approaches, and best practices for both text and image generation.
@@ -336,18 +337,29 @@ Then evaluate and expand on the most promising thoughts to reach a final recomme
 Some Bedrock models, like Claude 3 and later versions, support vision capabilities, allowing you to upload images and ask questions about them.
 
 ### Visual Analysis - Marketing
+
+![1760638273858_img](https://github.com/user-attachments/assets/a886a7d3-196f-4879-8418-b7ff892d5f72)
+
+
 ```
 Analyze this product image and create a marketing description that highlights the visual appeal and key features you can observe. Focus on colors, design elements, and perceived quality.
 ```
 **Recommended Settings:** Temperature: 0.6 (descriptive creativity)
 
 ### Quality Control - Manufacturing
+
+![1760638413921_img](https://github.com/user-attachments/assets/c282afff-a703-42e5-86da-5671148baa49)
+
 ```
 Examine this product image for any visible defects or quality issues. Provide a detailed inspection report noting any anomalies, surface imperfections, or deviations from expected appearance.
 ```
 **Recommended Settings:** Temperature: 0.2 (precise, factual analysis)
 
 ### Creative Content - Social Media
+
+![1760638491823_img](https://github.com/user-attachments/assets/4108aa48-658b-4b6d-91fa-b85c32b424dc)
+
+
 ```
 Look at this image and create an engaging Instagram caption that would appeal to millennials. Include relevant hashtags and a call-to-action that encourages engagement.
 ```
