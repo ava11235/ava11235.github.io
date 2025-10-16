@@ -471,6 +471,40 @@ Build your negative prompt library with these commonly problematic elements:
    - 70-100 steps: Maximum quality, slower
 
 ---
+# System Prompts: 🎯 An Important Layer of Prompt Engineering
+
+In addition to the prompts you've seen throughout this guide, most modern LLM platforms such as Amazon Bedrock support **system prompts**—a separate layer of instructions that sets persistent behavior and context before any user interaction begins.
+
+## What Are System Prompts?
+
+System prompts define the model's role, tone, constraints, and behavior that persist across all interactions. Think of them as the "operating instructions" that govern how the model responds, while user prompts contain the specific tasks or questions.
+
+**Key Difference:**
+- **System Prompt:** Set once, defines *how* the model behaves (role, style, constraints)
+- **User Prompt:** Changes each time, defines *what* you want the model to do (specific task)
+
+## Simple Example
+
+**System Prompt:**
+```
+You are a professional technical documentation writer. Always use clear, 
+concise language with proper markdown formatting. Structure responses with 
+headers and bullet points. If you're unsure about technical details, 
+state your assumptions clearly rather than guessing.
+```
+
+**User Prompt:**
+```
+Explain how to configure an S3 bucket for static website hosting.
+```
+
+The system prompt ensures all responses follow your documentation standards without repeating those instructions in every user prompt.
+
+## Best Practice
+
+Keep system prompts focused on behavior and style. Use user prompts for specific tasks and context. This separation makes your prompts more maintainable and cost-effective since you're not repeating instructions with every request.
+
+---
 
 ## Inference Parameter Guidelines: The Fine-Tuning Dials
 
