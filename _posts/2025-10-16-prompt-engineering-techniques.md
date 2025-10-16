@@ -816,3 +816,7 @@ Remember: every expert prompt engineer started exactly where you are now. The di
 
 Happy prompting!* 🚀
 
+### Transparency Notice
+
+This blog post was created with the assistance of artificial intelligence. The content, examples, and recommendations are based on current best practices in prompt engineering and have been structured to provide practical, actionable guidance. 
+
