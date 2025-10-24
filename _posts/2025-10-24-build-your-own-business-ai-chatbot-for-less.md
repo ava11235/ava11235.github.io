@@ -1,9 +1,14 @@
 # How Small Businesses Can Build Their Own "Amazon Q" for Less
 
+
+
+![1761334197930_img](https://github.com/user-attachments/assets/364d043a-02f1-41b1-8bfe-ee394a531065)
+
+
 *A practical guide to implementing AI chatbots without breaking the bank*
 
 ---
-
+Video version of this post can be found [here](https://youtu.be/ihBAUZMHlzI?si=r6V0vBeR9pH7B0rY)
 ## The $20/User Problem
 
 You've heard about Amazon Q Business. It's impressive—a fully-managed AI chatbot that can answer questions from your company's knowledge base, integrate with 40+ data sources, and requires zero engineering effort.
