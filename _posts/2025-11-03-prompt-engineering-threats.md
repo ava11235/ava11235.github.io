@@ -1,4 +1,4 @@
-# Securing Your AI Applications: A Guide to Prompt Engineering Threats in Amazon Bedrock
+# Securing Your AI Applications: A Guide to Prompt Engineering Threats 
 
 ![1762189534197_img](https://github.com/user-attachments/assets/c5b7f608-7b9a-4d26-9541-d0c1219fb2c9)
 
