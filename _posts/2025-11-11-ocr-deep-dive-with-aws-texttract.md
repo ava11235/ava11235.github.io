@@ -2,7 +2,6 @@
 
 ![1762878970920_img](https://github.com/user-attachments/assets/afa58407-72ad-43f5-8046-a6e78d80734a)
 
-
 *Understanding the technology that reads 60+ million documents daily*
 
 ---
@@ -91,6 +90,8 @@ Grayscale Image → Threshold Algorithm → Binary Image
 - Pixels above threshold = white, below = black
 
 **Adaptive Thresholding** handles uneven lighting by calculating local thresholds:
+
+{% raw %}
 ```python
 # Conceptual pseudocode
 for each pixel:
@@ -101,6 +102,7 @@ for each pixel:
     else:
         output = black
 ```
+{% endraw %}
 
 **Deskewing** - Straightening tilted text:
 - Detect text orientation using **Hough Transform**
@@ -261,6 +263,7 @@ CTC calculates probability of all possible alignments and sums them, enabling en
 
 **The Breakthrough**: Let the model decide where to "look"
 
+{% raw %}
 ```python
 # Conceptual attention mechanism
 for each character to predict:
@@ -268,6 +271,7 @@ for each character to predict:
     context_vector = weighted_sum(features, attention_weights)
     character = predict(context_vector, previous_characters)
 ```
+{% endraw %}
 
 **Visualization**: When predicting "e" in "Hello":
 - Model attends strongly to middle of word
@@ -319,6 +323,8 @@ AWS Textract answers:
 #### 1. Text Detection and Extraction
 
 **Basic Usage**:
+
+{% raw %}
 ```python
 import boto3
 
@@ -338,8 +344,11 @@ for item in response['Blocks']:
     if item['BlockType'] == 'LINE':
         print(item['Text'])
 ```
+{% endraw %}
 
 **What Textract Returns**:
+
+{% raw %}
 ```json
 {
   "BlockType": "LINE",
@@ -355,12 +364,12 @@ for item in response['Blocks']:
     },
     "Polygon": [
       {"X": 0.123, "Y": 0.089},
-      {"X": 0.357, "Y": 0.089},
-      ...
+      {"X": 0.357, "Y": 0.089}
     ]
   }
 }
 ```
+{% endraw %}
 
 #### 2. Form Extraction (Key-Value Pairs)
 
@@ -374,6 +383,8 @@ Phone: 555-0100
 Just as unstructured text.
 
 **Textract's Intelligence**:
+
+{% raw %}
 ```python
 response = textract.analyze_document(
     Document={'S3Object': {...}},
@@ -396,6 +407,7 @@ for block in response['Blocks']:
     "Phone": "555-0100"
 }
 ```
+{% endraw %}
 
 **How It Works**:
 - Deep learning models trained on millions of forms
@@ -414,6 +426,8 @@ Gadget 15.00 3 45.00
 Becomes: "Product Price Qty Total Widget 10.00 5 50.00..." (structure lost)
 
 **Textract Table Understanding**:
+
+{% raw %}
 ```python
 response = textract.analyze_document(
     Document={'S3Object': {...}},
@@ -431,6 +445,7 @@ for block in response['Blocks']:
     {"Product": "Gadget", "Price": "15.00", "Qty": "3", "Total": "45.00"}
 ]
 ```
+{% endraw %}
 
 **Detection Algorithm**:
 1. Identify table region using object detection CNN
@@ -443,6 +458,8 @@ for block in response['Blocks']:
 #### 4. Queries (Natural Language Document Search)
 
 **The Latest Feature** (2021):
+
+{% raw %}
 ```python
 response = textract.analyze_document(
     Document={'S3Object': {...}},
@@ -463,6 +480,7 @@ response = textract.analyze_document(
     "Who is the vendor?": "Acme Corporation"
 }
 ```
+{% endraw %}
 
 **Underlying Technology**:
 - **BERT-based models** understand question semantics
@@ -473,6 +491,8 @@ response = textract.analyze_document(
 #### 5. AnalyzeID (Identity Documents)
 
 **Specialized Processing**:
+
+{% raw %}
 ```python
 response = textract.analyze_id(
     DocumentPages=[
@@ -491,6 +511,7 @@ response = textract.analyze_id(
     "Address": "456 Oak Avenue, Portland, OR 97201"
 }
 ```
+{% endraw %}
 
 **Special Capabilities**:
 - Recognizes 100+ ID document types worldwide
@@ -501,6 +522,8 @@ response = textract.analyze_id(
 #### 6. AnalyzeExpense (Receipts & Invoices)
 
 **Domain-Specific Intelligence**:
+
+{% raw %}
 ```python
 response = textract.analyze_expense(
     Document={'S3Object': {...}}
@@ -519,6 +542,7 @@ response = textract.analyze_expense(
     ]
 }
 ```
+{% endraw %}
 
 **Business Logic Built-In**:
 - Distinguishes subtotal, tax, tip, total
@@ -596,6 +620,8 @@ Textract likely trained on:
 - 10% error rate in data entry
 
 **Textract Solution**:
+
+{% raw %}
 ```python
 def process_mortgage_application(document_pages):
     """
@@ -658,6 +684,7 @@ def process_mortgage_application(document_pages):
     
     return results, validation_results
 ```
+{% endraw %}
 
 **Results**:
 - **Processing time**: 30 minutes → 3 minutes (90% reduction)
@@ -678,6 +705,8 @@ def process_mortgage_application(document_pages):
 - 50+ years of varying formats
 
 **Textract + Custom Post-Processing**:
+
+{% raw %}
 ```python
 def process_medical_record(record_images):
     """
@@ -744,6 +773,7 @@ def process_medical_record(record_images):
     
     return patient_data
 ```
+{% endraw %}
 
 **Enhanced Accuracy**:
 - **Custom medical dictionary** for post-processing
@@ -770,6 +800,8 @@ def process_medical_record(record_images):
 - Jurisdiction
 
 **Textract + NLP Pipeline**:
+
+{% raw %}
 ```python
 def analyze_contract(contract_pdf):
     """
@@ -846,6 +878,7 @@ def analyze_contract_portfolio(contract_list):
     
     return results, analytics
 ```
+{% endraw %}
 
 **Results**:
 - **100,000 contracts** analyzed in 2 weeks
@@ -865,6 +898,8 @@ def analyze_contract_portfolio(contract_list):
 - International currencies
 
 **Implementation**:
+
+{% raw %}
 ```python
 def process_expense_receipt(image_data, user_id):
     """
@@ -952,8 +987,11 @@ def categorize_expense(merchant, line_items):
     prediction = json.loads(response['Body'].read())
     return prediction['category']  # e.g., "Meals", "Transportation", "Lodging"
 ```
+{% endraw %}
 
 **Business Rules Integration**:
+
+{% raw %}
 ```python
 def check_policy_compliance(expense_data):
     """
@@ -1002,6 +1040,7 @@ def check_policy_compliance(expense_data):
     
     return {'compliant': compliant, 'warnings': warnings}
 ```
+{% endraw %}
 
 **Results**:
 - **95% straight-through processing** (no human intervention)
@@ -1023,6 +1062,8 @@ def check_policy_compliance(expense_data):
 - **Color**: Color or grayscale (not binary black/white)
 
 **Pre-processing for Better Results**:
+
+{% raw %}
 ```python
 from PIL import Image, ImageEnhance, ImageFilter
 import numpy as np
@@ -1068,6 +1109,7 @@ def optimize_image_for_textract(image_path):
     
     return output_path
 ```
+{% endraw %}
 
 ### Cost Optimization
 
@@ -1081,6 +1123,8 @@ def optimize_image_for_textract(image_path):
 **Optimization Strategies**:
 
 1. **Use the Right API**:
+
+{% raw %}
 ```python
 def choose_optimal_api(document_type):
     """
@@ -1105,8 +1149,11 @@ def choose_optimal_api(document_type):
         # Many fields, use Forms feature
         return 'analyze_document_forms'  # $15/1000
 ```
+{% endraw %}
 
 2. **Batch Processing**:
+
+{% raw %}
 ```python
 import asyncio
 
@@ -1137,8 +1184,11 @@ async def process_batch_async(document_list, batch_size=25):
     
     return results
 ```
+{% endraw %}
 
 3. **Caching and Deduplication**:
+
+{% raw %}
 ```python
 import hashlib
 
@@ -1169,8 +1219,11 @@ def process_with_cache(document_bytes):
     
     return response
 ```
+{% endraw %}
 
 4. **Progressive Processing**:
+
+{% raw %}
 ```python
 def progressive_extraction(document):
     """
@@ -1209,10 +1262,13 @@ def progressive_extraction(document):
     
     return merge_results(form_data, extract_query_answers(response))
 ```
+{% endraw %}
 
 ### Accuracy Improvement
 
 **Confidence Thresholds**:
+
+{% raw %}
 ```python
 def extract_with_confidence(response, min_confidence=85):
     """
@@ -1242,8 +1298,11 @@ def extract_with_confidence(response, min_confidence=85):
     
     return results
 ```
+{% endraw %}
 
 **Human-in-the-Loop**:
+
+{% raw %}
 ```python
 def process_with_hitl(document, user_id):
     """
@@ -1281,8 +1340,11 @@ def process_with_hitl(document, user_id):
             'extracted_data': results['high_confidence']
         }
 ```
+{% endraw %}
 
 **Custom Post-Processing**:
+
+{% raw %}
 ```python
 def apply_domain_knowledge(textract_output, domain='medical'):
     """
@@ -1315,6 +1377,7 @@ def apply_domain_knowledge(textract_output, domain='medical'):
     
     return textract_output
 ```
+{% endraw %}
 
 ---
 
@@ -1403,6 +1466,8 @@ Train custom models with minimal examples:
 **4. Unified Document Intelligence**
 
 Going beyond extraction to analysis:
+
+{% raw %}
 ```python
 # Future API (conceptual)
 response = document_ai.understand(
@@ -1426,6 +1491,7 @@ response = document_ai.understand(
     "urgency": "high"
 }
 ```
+{% endraw %}
 
 **5. Privacy-Preserving OCR**
 
@@ -1478,6 +1544,7 @@ We've journeyed from Emanuel Goldberg's 1914 reading machine to AWS Textract's A
 
 ### Getting Started with Textract
 
+{% raw %}
 ```python
 # Your first Textract application
 import boto3
@@ -1497,6 +1564,7 @@ def extract_invoice_data(image_path):
 # Try it!
 extract_invoice_data('invoice.jpg')
 ```
+{% endraw %}
 
 ### Final Thoughts
 
@@ -1512,7 +1580,7 @@ The documents you process today contain the insights that will drive tomorrow's 
 - [Papers With Code - OCR](https://paperswithcode.com/task/optical-character-recognition)
 - [LayoutLM Research](https://github.com/microsoft/unilm/tree/master/layoutlm)
 
+**What will you build with OCR?** Share your use cases in the comments!
 
 ---
 
-*Written by [Your Name] | Published [Date] | Reading Time: 45 minutes*
